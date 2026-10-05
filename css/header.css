@@ -1,27 +1,45 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
-    background-color: var(--background-tertiary-color);
-    padding: 38px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  background-color: var(--background-tertiary-color);
+  padding: 38px 48px;
+  position: relative;
 }
 
 .logo {
-    display: inline-block;
-    width: 68px;
-    height: 64px;
-
+  display: inline-block;
+  width: 68px;
+  height: 64px;
 }
 
-.navigation-menu{
-    margin-top: 24px;
+.navigation-menu {
+  margin-top: 24px;
 }
 
-input[type="checkbox"]:checked ~ nav{
-    display: block;
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
-nav{
-    display: none;
+nav {
+  display: none;
+}
+
+.listLink {
+  list-style: none;
+}
+
+.listLink li{
+    margin: 16px 0;
+}
+
+.listLink li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
