@@ -52,6 +52,11 @@ body {
   color: var(--text-primary-color);
 }
 
+.section-title {
+  margin-top: 84px;
+  margin-bottom: 84px;
+}
+
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--text-weight);
